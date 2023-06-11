@@ -1,0 +1,19 @@
+{
+  "name": "nest-react-monorepo",
+  "version": "1.0.0",
+  "description": "Monorepo using Turbo, NestJS and Vite to build and manage backend and frontend projects.",
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build"
+  },
+  "license": "ISC",
+  "workspaces": [
+    "apps/*"
+  ],
+  "devDependencies": {
+    "turbo": "^1.10.3"
+  },
+  "dependencies": {
+    "@nestjs/serve-static": "^3.0.1"
+  }
+}
