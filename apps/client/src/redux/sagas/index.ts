@@ -1,5 +1,5 @@
 import { call, put, takeLatest } from 'redux-saga/effects';
-import { fetchUsersSuccess, fetchUsers } from '../slices/users';
+import { fetchUsersSuccess, fetchUsers } from '../slices/users.ts';
 import { Action } from 'redux';
 
 function* fetchUserWorker(_action: Action): Generator<any, void, any> {

@@ -1,19 +1,17 @@
-import { useEffect } from 'react';
-import { useDispatch } from 'react-redux';
-import { useSelector } from 'react-redux/es/hooks/useSelector';
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
+import React from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Login from './pages/Login/Login.tsx';
 
 function App() {
-  const dispatch = useDispatch();
-  const users = useSelector((state: any) => state.users.usersList);
-  useEffect(() => {
-    dispatch({ type: 'FETCH_USER' });
-  }, []);
   return (
-    <div>
-      {users.map((user: any) => (
-        <div key={user.id}>{user.name}</div>
-      ))}
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/login" element={<Login />} />
+      </Routes>
+    </BrowserRouter >
   );
 }
 
