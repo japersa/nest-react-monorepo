@@ -8,7 +8,8 @@ Monorepo using Turbo, NestJS, and Vite to build and manage backend and frontend 
 2. Install the dependencies by running the following command:
 
 ```bash
-npm install
+yarn config set workspaces-experimental true
+yarn install
 ```
 
 ## Usage
@@ -18,7 +19,7 @@ npm install
 To start the development server, run the following command:
 
 ```bash
-npm run dev
+yarn run dev
 ```
 
 This will use Turbo to run the development environment.
@@ -28,7 +29,7 @@ This will use Turbo to run the development environment.
 To build the project, run the following command:
 
 ```bash
-npm run build
+yarn run build
 ```
 
 This will use Turbo to build the project.

@@ -6,7 +6,7 @@
     "dev": "turbo run dev",
     "build": "turbo run build"
   },
-  "license": "ISC",
+  "private": true,
   "workspaces": [
     "apps/*"
   ],
